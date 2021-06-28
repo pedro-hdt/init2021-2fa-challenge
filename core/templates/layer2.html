@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Super Duper Safey Safe Auth | INIT 2021</title>
+</head>
+
+<body>
+
+<h1>Confirm the secret number</h1>
+<h2>For your safety...</h2>
+<h3>🙃</h3>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Acme Now" />
+</form>
+
+</body>
+
+</html>

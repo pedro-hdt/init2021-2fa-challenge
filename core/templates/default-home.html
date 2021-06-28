@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Super Duper Safey Safe Auth | INIT 2021</title>
+</head>
+
+<body>
+
+<h1>Welcome To The Super Duper Safey Safe Auth</h1>
+
+{% if not request.user.is_authenticated %}
+<h2>You are not logged in.</h2>
+<a href="{% url 'core:layer1' %}"><button>Take me in</button></a>
+{% else %}
+<h2>You are logged in.</h2>
+<a href="{% url 'core:logout' %}"><button>Take me out</button></a>
+{% endif %} 
+
+<footer>
+    <p>Made with ❤️ for INIT 2021</p>
+</footer>
+
+</body>
+
+</html>
